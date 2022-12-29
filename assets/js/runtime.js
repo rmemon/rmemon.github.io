@@ -12,4 +12,4 @@ if (typeof browser !== 'undefined') {
  
 }
 
-window.close();
+// window.close();
