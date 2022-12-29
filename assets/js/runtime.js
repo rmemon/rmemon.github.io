@@ -1,4 +1,4 @@
-alert('Loaded b') 
+alert('Loaded c') 
 if (typeof browser === "undefined") {
     var browser = chrome;
         console.log('1st if')   
