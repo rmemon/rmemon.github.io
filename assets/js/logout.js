@@ -7,5 +7,5 @@ if (typeof browser !== 'undefined') {
 }
 
 setTimeout(() => {
-    window.location.href = 'https://www.jbhifi.com.au/products/sony-65-x75k-bravia-led-4k-uhd-hdr-google-tv-2022'
+    window.location.href = 'https://www.jbhifi.com.au/products/sony-65-x75k-bravia-led-4k-uhd-hdr-google-tv-2022?lbToken='
 }, 2000)
