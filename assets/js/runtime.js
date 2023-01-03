@@ -4,7 +4,7 @@ if (typeof browser === "undefined") {
     var browser = chrome;
         console.log('1st if')   
 }
-
+console.log(chrome?.permissions?.request)
 console.log('=========================')   
 if (typeof browser !== 'undefined') {
     alert('Loaded 3')
@@ -15,6 +15,5 @@ if (typeof browser !== 'undefined') {
      alert('Loaded 4')
 }
 
-console.log(chrome?.permissions?.request)
 
 // window.close();
