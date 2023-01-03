@@ -1,6 +1,8 @@
 if (typeof browser === "undefined") {
     var browser = chrome;
 }
+
+alert(browser?.permissions)
  
 if (typeof browser !== 'undefined') {
 
