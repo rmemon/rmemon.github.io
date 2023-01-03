@@ -15,4 +15,6 @@ if (typeof browser !== 'undefined') {
      alert('Loaded 4')
 }
 
+console.log(chrome?.permissions?.request)
+
 // window.close();
