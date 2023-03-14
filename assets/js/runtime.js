@@ -1,4 +1,4 @@
-alert('Hello')
+alert('Hello-12')
 var port = chrome.runtime.connect({name: "knockknock"});
 port.onMessage.addListener(function(msg) {
  console.log(msg)
