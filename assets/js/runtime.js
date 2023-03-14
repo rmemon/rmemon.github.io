@@ -1,7 +1,9 @@
 alert('Hello')
- window?.chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-     console.log(request)
- });
+var port = chrome.runtime.connect({name: "knockknock"});
+port.onMessage.addListener(function(msg) {
+ console.log(msg)
+});
+
 
 // if (typeof browser === "undefined") {
 //     var browser = chrome;
