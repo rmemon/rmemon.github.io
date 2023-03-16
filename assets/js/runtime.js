@@ -8,6 +8,11 @@ try {
   browser.runtime.sendMessage('com.LittleBirdie.app.iOSExtension', { type: 'check-installed'}, function (res){ 
      alert(res)
   })
+    
+    browser.runtime.sendMessage('com.LittleBirdie.app.iOSExtension (XJA6T74Z7S)', { type: 'check-installed'}, function (res){ 
+     alert(res)
+     alert('with Team Id')
+  })
 }
 catch(e) {
 console.log(e)
