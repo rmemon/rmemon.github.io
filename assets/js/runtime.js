@@ -6,9 +6,7 @@ if (typeof browser === "undefined") {
 
 try {
   browser.runtime.sendMessage('com.LittleBirdie.app.iOSExtension', { type: 'check-installed'}, function (res){ 
-      if(res) {
-         alert(1234)
-        }
+     alert(res)
   })
 }
 catch(e) {
