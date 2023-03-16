@@ -1,8 +1,23 @@
-alert('Hello-12')
-var port = chrome.runtime.connect({name: "knockknock"});
-port.onMessage.addListener(function(msg) {
- console.log(msg)
-});
+
+alert('Hello-89')
+if (typeof browser === "undefined") {
+    var browser = chrome;
+}
+
+try {
+  browser.runtime.sendMessage('com.LittleBirdie.app.iOSExtension', { type: 'check-installed'}, function (){ 
+  alert(123)
+  })
+}
+catch(e) {
+console.log(e)
+ alert('error', e)
+}
+
+// var port = chrome.runtime.connect({name: "knockknock"});
+// port.onMessage.addListener(function(msg) {
+//  console.log(msg)
+// });
 
 
 // if (typeof browser === "undefined") {
