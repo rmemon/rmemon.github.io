@@ -5,14 +5,15 @@ if (typeof browser === "undefined") {
 }
 
 try {
-  browser.runtime.sendMessage('com.LittleBirdie.app.iOSExtension', { type: 'check-installed'}, function (res){ 
-     alert(res)
-  })
+//   browser.runtime.sendMessage('com.LittleBirdie.app.iOSExtension', { type: 'check-installed'}, function (res){ 
+//      alert(res)
+//   })
     
-    browser.runtime.sendMessage('com.LittleBirdie.app.iOSExtension (XJA6T74Z7S)', { type: 'check-installed'}, function (res){ 
-     alert(res)
-     alert('with Team Id')
-  })
+    browser.runtime.sendMessage('com.LittleBirdie.app.iOSExtension (XJA6T74Z7S)', { type: 'check-installed'}, function(response) {
+    console.log("Received response from the background page:");
+    console.log(response);
+        alert(response)
+    })
 }
 catch(e) {
 console.log(e)
