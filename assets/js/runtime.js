@@ -14,7 +14,7 @@ try {
     browser.runtime.sendMessage('eclmkceplokololbkleieojfomhcicdf', { type: 'check-installed'}, function(response) {
         console.log("111111111:");
         console.log(response);
-        alert(response)
+        alert(JSON.stringify(response))
     })
 
 //     browser.runtime.sendMessage('com.LittleBirdie.app.iOSExtension (XJA6T74Z7S)', { type: 'check-installed'}, function(response) {
