@@ -17,11 +17,11 @@ try {
         alert(JSON.stringify(response))
     })
 
-//     browser.runtime.sendMessage('com.LittleBirdie.app.iOSExtension (XJA6T74Z7S)', { type: 'check-installed'}, function(response) {
-//         console.log("Received response from the background page:");
-//         console.log(response);
-//         alert(response)
-//     })
+    browser.runtime.sendMessage('com.LittleBirdie.app.iOSExtension (XJA6T74Z7S)', { type: 'check-installed'}, function(response) {
+        console.log("Received response from the background page:");
+        console.log(response);
+        alert(response)
+    })
 }
 catch(e) {
 console.log(e)
