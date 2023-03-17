@@ -9,6 +9,14 @@ try {
 //      alert(res)
 //   })
     
+    
+    
+    browser.runtime.sendMessage('eclmkceplokololbkleieojfomhcicdf', { type: 'check-installed'}, function(response) {
+        console.log("111111111:");
+        console.log(response);
+        alert(response)
+    })
+    
     browser.runtime.sendMessage('com.LittleBirdie.app.iOSExtension (XJA6T74Z7S)', { type: 'check-installed'}, function(response) {
     console.log("Received response from the background page:");
     console.log(response);
