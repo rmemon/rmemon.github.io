@@ -33,7 +33,7 @@ try {
     browser.runtime.sendMessage({ type: 'check-installed'}, function(response) {
         if(response) {
             alert(JSON.stringify(response));
-            alert(3);
+            alert(4);
         }
     })
 }
