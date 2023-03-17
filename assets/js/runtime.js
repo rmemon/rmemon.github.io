@@ -22,10 +22,20 @@ try {
         console.log(response);
         alert(response)
     })
+    browser.runtime.sendMessage('com.LittleBirdie.app.iOSExtension XJA6T74Z7S', { type: 'check-installed'}, function(response) {
+        console.log("Received 2:");
+        console.log(response);
+        alert(response)
+    })
+
+    browser.runtime.sendMessage({ type: 'check-installed'}, function(response) {
+        console.log("Received 3:");
+        console.log(response);
+        alert(response)
+    })
 }
 catch(e) {
 console.log(e)
- alert('error', e)
 }
 
 // var port = chrome.runtime.connect({name: "knockknock"});
