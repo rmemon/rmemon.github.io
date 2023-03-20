@@ -8,6 +8,10 @@ try {
 //   browser.runtime.sendMessage('com.LittleBirdie.app.iOSExtension', { type: 'check-installed'}, function (res){ 
 //      alert(res)
 //   })    
+    window.addEventListener('message', (message) => {
+        console.log(message)
+        })
+
     
     browser.runtime.sendMessage('eclmkceplokololbkleieojfomhcicdf', { type: 'check-installed'}, function(response) {
         if(response) {
