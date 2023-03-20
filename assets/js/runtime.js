@@ -9,7 +9,7 @@ try {
 //      alert(res)
 //   })    
     window.addEventListener('message', (message) => {
-        console.log(message)
+        console.log(message?.data?.lbExtInstalled)
         })
 
     
