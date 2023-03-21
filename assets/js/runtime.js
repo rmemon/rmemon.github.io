@@ -10,7 +10,8 @@ try {
 //   })    
     window.addEventListener('message', (message) => {
         console.log(message?.data?.lbExtInstalled)
-        })
+        alert(JSON.stringify(message?.data))
+    })
 
     
     browser.runtime.sendMessage('eclmkceplokololbkleieojfomhcicdf', { type: 'check-installed'}, function(response) {
