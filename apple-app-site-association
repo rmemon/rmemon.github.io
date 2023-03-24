@@ -4,7 +4,7 @@
         "details": [
             {
                 "appID": "XJA6T74Z7S.com.LittleBirdie.app",
-                "paths": ["/", "NOT /mobile/ext/*"]
+                "paths": ["*", "NOT /mobile/ext/*"]
             }
         ]
     }
