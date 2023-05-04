@@ -1,12 +1,28 @@
 {
   "applinks": {
-    "apps": [],
-    "details": [
-      {
-        "appID": "XJA6T74Z7S.com.LittleBirdie.app",
-        "paths": ["/", "/welcome", "/product/1"],
-        "exclude": ["mobile/ext/enable", "/mobile/ext/permissions", "/mobile/ext/permissions-details"]
-      }
-    ]
-  }
+      "details": [
+           {
+             "appIDs": [ "XJA6T74Z7S.com.LittleBirdie.app" ],
+             "components": [
+               {
+                  "/": "/",
+                  "comment": ""
+               },
+               {
+                  "/": "/welcome",
+                  "comment": ""
+               },
+               {
+                  "/": "/product/*",
+                  "comment": "Matches any URL whose path starts with /buy/"
+               },
+               {
+                  "/": "/mobile/ext/*",
+                  "exclude": true,
+                  "comment": "Matches any URL whose path starts with /help/website/ and instructs the system not to open it as a universal link"
+               }
+             ]
+           }
+       ]
+   },
 }
