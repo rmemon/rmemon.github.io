@@ -4,9 +4,8 @@
     "details": [
       {
         "appID": "XJA6T74Z7S.com.LittleBirdie.app",
-        "paths": [
-           "NOT /mobile/ext/*", "/*"
-        ]
+        "paths": ["/"],
+        "exclude": ["mobile/ext/enable", "/mobile/ext/permissions", "/mobile/ext/permissions-details"]
       }
     ]
   }
