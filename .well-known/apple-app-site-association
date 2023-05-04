@@ -5,13 +5,7 @@
       {
         "appID": "XJA6T74Z7S.com.LittleBirdie.app",
         "paths": [
-          "*"
-        ],
-        "include": [
-          "https://rmemon.github.io/*"
-        ],
-        "exclude": [
-          "/mobile/ext/enable"
+           "NOT /mobile/ext/*", "/*"
         ]
       }
     ]
