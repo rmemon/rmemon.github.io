@@ -5,7 +5,7 @@
       {
         "appID": "XJA6T74Z7S.com.LittleBirdie.app",
           "paths": [        
-            "/*"
+            "*"
           ]
       }
     ]
