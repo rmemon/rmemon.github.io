@@ -4,12 +4,7 @@
     "details": [
       {
         "appID": "XJA6T74Z7S.com.LittleBirdie.app",
-          "paths": [
-            "NOT /extension",
-            "NOT /safari-extension-active",
-            "NOT /little-birdie-extension",
-            "NOT /extension-active",
-            "NOT /mobile/ext/*",            
+          "paths": [        
             "/*"
           ]
       }
