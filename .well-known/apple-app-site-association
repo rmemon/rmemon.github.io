@@ -1,12 +1,18 @@
 {
   "applinks": {
-    "apps": [],
+    "apps": [
+    ],
     "details": [
       {
         "appID": "XJA6T74Z7S.com.LittleBirdie.app",
-          "paths": [        
-            "/*"
-          ]
+        "paths": [
+          "NOT /mobile/ext/*",
+          "NOT /safari-extension-active",
+          "NOT /extension",
+          "NOT /little-birdie-extension",
+          "NOT /extension-active",
+          "/*"
+        ]
       }
     ]
   }
