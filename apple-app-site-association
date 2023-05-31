@@ -1,19 +1,31 @@
 {
-  "applinks": {
-    "apps": [
-    ],
-    "details": [
-      {
-        "appID": "XJA6T74Z7S.com.LittleBirdie.app",
-        "paths": [
-          "NOT /mobile/ext/*",
-          "NOT /safari-extension-active",
-          "NOT /extension",
-          "NOT /little-birdie-extension",
-          "NOT /extension-active",
-          "/*"
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "XJA6T74Z7S.com.LittleBirdie.app",
+                "paths": [
+                    "NOT /mobile/ext/*",
+                    "NOT /safari-extension-active",
+                    "NOT /extension",
+                    "NOT /little-birdie-extension",
+                    "NOT /extension-active",
+                    "NOT /cba/*",
+                    "/*"
+                ]
+            },
+            {
+                "appID": "XJA6T74Z7S.com.LittleBirdie.app.preprod",
+                "paths": [
+                    "NOT /mobile/ext/*",
+                    "NOT /safari-extension-active",
+                    "NOT /extension",
+                    "NOT /little-birdie-extension",
+                    "NOT /extension-active",
+                    "NOT /cba/*",
+                    "/*"
+                ]
+            }
         ]
-      }
-    ]
-  }
+    }
 }
