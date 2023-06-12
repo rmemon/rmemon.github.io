@@ -435,5 +435,18 @@
     </body>
 
 <!-- Mirrored from demo.deviserweb.com/cv/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2017 18:26:38 GMT -->
+<script>
+function isIOS(){
+  if (/iPad|iPhone|iPod/.test(navigator.platform)) {
+    return true
+  } else {
+    return navigator.maxTouchPoints &&
+              navigator.maxTouchPoints > 2 &&
+              /MacIntel/.test(navigator.platform)
+  }
+}
+alert(isIOS())
+alert(!!window.navigator?.userAgent?.match(/WebKit/i) && !window.navigator?.userAgent?.match(/CriOS/i))
+</script>
 
 </html>
